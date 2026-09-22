@@ -43,37 +43,6 @@ export const Header: React.FC = () => {
 
   return (
     <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-40 shadow-2xs">
-      {/* 1. TOP UTILITY BAR (Date, Tagline, Quick Links) */}
-      <div className="bg-[#f8f9fa] border-b border-gray-200 text-xs text-gray-600">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 py-1.5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="font-medium text-gray-700 hidden sm:inline">
-              {getTodayDateIndonesian()}
-            </span>
-            <span className="text-gray-300 hidden sm:inline">|</span>
-            <span className="text-[#0b4f8a] font-semibold flex items-center gap-1">
-              <Flame className="w-3.5 h-3.5 text-[#e65100]" />
-              <span className="italic">KABAR JUJUR UNTUK INDONESIA</span>
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3 sm:gap-4 text-[11px]">
-            <Link to="/tentang" className="hover:text-[#0b4f8a] transition-colors hidden md:inline">
-              Tentang
-            </Link>
-            <Link to="/redaksi" className="hover:text-[#0b4f8a] transition-colors hidden md:inline">
-              Redaksi
-            </Link>
-            <Link to="/pedoman-media" className="hover:text-[#0b4f8a] transition-colors hidden sm:inline">
-              Pedoman Media
-            </Link>
-            <Link to="/kontak" className="hover:text-[#0b4f8a] transition-colors">
-              Kontak
-            </Link>
-          </div>
-        </div>
-      </div>
-
       {/* 2. MAIN BRAND HEADER */}
       <div className="max-w-7xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
         {/* Left Section: [ ☰ Menu Button ] [ Logo KABAR TERBARU ] */}
