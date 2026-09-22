@@ -112,7 +112,7 @@ export const AuthorPage: React.FC = () => {
               </h1>
             </div>
 
-            <p className="text-sm text-gray-700 leading-relaxed max-w-2xl text-right">
+            <p className="text-sm text-gray-700 leading-relaxed max-w-2xl text-left">
               {author.bio}
             </p>
 
@@ -122,7 +122,7 @@ export const AuthorPage: React.FC = () => {
                   <Award className="w-4 h-4 text-[#0b4f8a]" />
                   Keahlian & Spesialisasi Liputan:
                 </span>
-                <p className="text-right">{author.skillsDescription}</p>
+                <p className="text-left">{author.skillsDescription}</p>
               </div>
             )}
 
