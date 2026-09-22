@@ -68,8 +68,8 @@ export const AdminAdsPage: React.FC = () => {
       active: editingAd.active !== false,
       advertiser: editingAd.advertiser || 'Mitra Komersial',
       priority: Number(editingAd.priority) || 1,
-      startAt: editingAd.startAt,
-      endAt: editingAd.endAt,
+      ...(editingAd.startAt ? { startAt: editingAd.startAt } : {}),
+      ...(editingAd.endAt ? { endAt: editingAd.endAt } : {}),
     } as Advertisement);
 
       setEditingAd(null);
