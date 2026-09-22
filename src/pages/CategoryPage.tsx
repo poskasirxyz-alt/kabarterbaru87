@@ -9,7 +9,7 @@ import type { Article, Category } from '../types';
 import { INITIAL_CATEGORIES } from '../data/initialData';
 
 export const CategoryPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { categorySlug: slug } = useParams<{ categorySlug: string }>();
   const [category, setCategory] = useState<Category | null>(null);
   const [articles, setArticles] = useState<Article[]>([]);
   const [popularArticles, setPopularArticles] = useState<Article[]>([]);

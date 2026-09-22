@@ -7,7 +7,7 @@ import { getAuthorProfile, getArticlesByAuthor } from '../services/db';
 import type { Author, Article } from '../types';
 
 export const AuthorPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { authorSlug: slug } = useParams<{ authorSlug: string }>();
   const [author, setAuthor] = useState<Author | null>(null);
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
